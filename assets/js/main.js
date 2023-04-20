@@ -1,5 +1,6 @@
 const mario = document.querySelector('.mario')
 const pipe = document.querySelector('.pipe')
+const game_over = document.querySelector('.game-over, .hidden')
 const jump = () => { 
     mario.classList.add('jump')
 
@@ -28,9 +29,12 @@ if (pipePosition < 12 && pipePosition > 0  && marioPosition < 8 ){
     mario.style.width = '7.5rem'
     mario.style.margin = '5rem'
 
+    game_over.classList.add('game-over')
+    game_over.classList.remove('hidden')
 
     clearInterval(loop)
 }
 
 } , 10)
 document.addEventListener('keydown', jump)
+document.addEventListener('click', jump)

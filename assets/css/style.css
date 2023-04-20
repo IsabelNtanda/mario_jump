@@ -51,6 +51,17 @@ body{
     padding-top: 2rem;
     animation: clouds-animation  20s infinite linear;
 }
+
+.hidden{
+    display:none;
+}
+.game-over{
+    position: absolute;
+    width: 40rem;
+    top: 12rem;
+    left: 42%;
+   
+}
 @keyframes pipe-animation{
 
    0% {
