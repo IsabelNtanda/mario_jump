@@ -26,7 +26,7 @@ if (pipePosition < 12 && pipePosition > 0  && marioPosition < 8 ){
     mario.style.bottom = `${ marioPosition}rem`
 
     mario.src = './assets/images/game-over.png'
-    mario.style.width = '7.5rem'
+    mario.style.width = '9rem'
     mario.style.margin = '5rem'
 
     game_over.classList.add('game-over')
