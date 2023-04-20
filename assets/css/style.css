@@ -150,15 +150,3 @@ body {
   }
 }
 
-@media (max-width:360px) {
-
-  .mario {
-    width: 8rem;
-  }
-  .pipe {
-    width: 3rem;
-  }
-  .box_over{
-  top: 2rem;
-  }
-}
