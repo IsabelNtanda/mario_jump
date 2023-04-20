@@ -1,20 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mario jump</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="./assets/js/main.js" defer></script>
-</head>
-<body>
-  
-<div class="game-board">
-<img src="./assets/images/clouds.png" alt="clouds" class="clouds">
-<img src="./assets/images/mario.gif" alt="imagem do super mario" class="mario">
-<img src="./assets/images/pipe.png" alt="" class="pipe">
-<img src="./assets/images/over.png" alt="" class="game-over hidden">
-</div>
-</body>
-</html> 
+  </head>
+  <body>
+    <div class="game-board">
+      <audio
+        src="./assets/audio/game_over_song.mp3"
+        class="game_over_song"
+      ></audio>
+      <audio src="./assets/audio/jump_song.mp3" class="jump_song"></audio>
+      <img src="./assets/images/clouds.png" alt="clouds" class="clouds" />
+      <img
+        src="./assets/images/mario.gif"
+        alt="imagem do super mario"
+        class="mario"
+      />
+      <img src="./assets/images/pipe.png" alt="" class="pipe" />
+
+      <div class="box_over">
+        <img
+          src="./assets/images/over.png"
+          alt=""
+          id="game_over_img"
+          class="game_over hidden"
+        />
+        <button id="button" class="game_over hidden" class="">Reset</button>
+      </div>
+    </div>
+  </body>
+</html>
