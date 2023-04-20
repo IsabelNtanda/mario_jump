@@ -12,6 +12,7 @@ box-sizing: border-box;
 body{
 
     font-size: 1.6rem;
+    background: rgb(35,160,35);
   
 }
 
@@ -101,5 +102,22 @@ bottom: 0;
 
     100%{
 right: 100%;
+    }
+}
+
+@media (max-width:768px) {
+    .mario{
+        width: 10rem;
+    }
+
+    .pipe{
+        width:4rem;
+    }
+    .clouds{
+width: 10rem;
+    }
+
+    .game-over{
+        width: 20rem;
     }
 }
